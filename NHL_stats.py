@@ -2,17 +2,17 @@
 import pandas as pd
 
 ## Import CSV files
-case1= pd.read_csv('Case1.csv')
-case2= pd.read_csv('Case2.csv')
-case3= pd.read_csv('Case3.csv')
-case4= pd.read_csv('Case4.csv')
-case5= pd.read_csv('Case5.csv')
-case6= pd.read_csv('Case6.csv')
-case7= pd.read_csv('Case7.csv')
-case8= pd.read_csv('Case8.csv')
-case9= pd.read_csv('Case9.csv')
-case10= pd.read_csv('Case10.csv')
-case11= pd.read_csv('Case11.csv')
+case1= pd.read_csv('Case1_SQL.csv')
+case2= pd.read_csv('Case2_SQL.csv')
+case3= pd.read_csv('Case3_SQL.csv')
+case4= pd.read_csv('Case4_SQL.csv')
+case5= pd.read_csv('Case5_SQL.csv')
+case6= pd.read_csv('Case6_SQL.csv')
+case7= pd.read_csv('Case7_SQL.csv')
+case8= pd.read_csv('Case8_SQL.csv')
+case9= pd.read_csv('Case9_SQL.csv')
+case10= pd.read_csv('Case10_SQL.csv')
+case11= pd.read_csv('Case11_SQL.csv')
 
 ## Create final DataFrames
 # Case 1: Home and away games - wins and losses
