@@ -2,17 +2,17 @@
 import pandas as pd
 
 ## Import CSV files
-case1= pd.read_csv('Case1_SQL.csv')
-case2= pd.read_csv('Case2_SQL.csv')
-case3= pd.read_csv('Case3_SQL.csv')
-case4= pd.read_csv('Case4_SQL.csv')
-case5= pd.read_csv('Case5_SQL.csv')
-case6= pd.read_csv('Case6_SQL.csv')
-case7= pd.read_csv('Case7_SQL.csv')
-case8= pd.read_csv('Case8_SQL.csv')
-case9= pd.read_csv('Case9_SQL.csv')
-case10= pd.read_csv('Case10_SQL.csv')
-case11= pd.read_csv('Case11_SQL.csv')
+case1= pd.read_csv('../resources/sql/Case1_SQL.csv')
+case2= pd.read_csv('../resources/sql/Case2_SQL.csv')
+case3= pd.read_csv('../resources/sql/Case3_SQL.csv')
+case4= pd.read_csv('../resources/sql/Case4_SQL.csv')
+case5= pd.read_csv('../resources/sql/Case5_SQL.csv')
+case6= pd.read_csv('../resources/sql/Case6_SQL.csv')
+case7= pd.read_csv('../resources/sql/Case7_SQL.csv')
+case8= pd.read_csv('../resources/sql/Case8_SQL.csv')
+case9= pd.read_csv('../resources/sql/Case9_SQL.csv')
+case10= pd.read_csv('../resources/sql/Case10_SQL.csv')
+case11= pd.read_csv('../resources/sql/Case11_SQL.csv')
 
 ## Create final DataFrames
 # Case 1: Home and away games - wins and losses
@@ -259,7 +259,7 @@ ax2.set_ylim([0, max(max(home_counts["win"]), max(home_counts["lose"]), max(home
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case1_home_away_comparison_with_annotations_updated.png"  # Output file name
+output_file = "output/case1_home_away_comparison_with_annotations_updated.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 2: Home and away games - goals scored and goals conceded
@@ -330,7 +330,7 @@ ax2.set_ylim([75, max(goals_for_home.max(), goals_against_home.max(), goals_for_
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case2_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case2_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 3: Goals scored in 5on5 situations
@@ -401,7 +401,7 @@ ax2.set_ylim([40, max(goals_for_home.max(), goals_against_home.max(), goals_for_
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case3_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case3_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 4: Goals scored in 5on4 situations
@@ -472,7 +472,7 @@ ax2.set_ylim([0, max(goals_for_home.max(), goals_against_home.max(), goals_for_a
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case4_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case4_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 5: Goals scored in 4on5 situations
@@ -543,7 +543,7 @@ ax2.set_ylim([0, max(goals_for_home.max(), goals_against_home.max(), goals_for_a
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case5_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case5_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 6: Goals scored in other situations
@@ -614,7 +614,7 @@ ax2.set_ylim([10, max(goals_for_home.max(), goals_against_home.max(), goals_for_
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case6_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case6_goals_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 7: Shots on goals in total
@@ -686,7 +686,7 @@ ax2.set_ylim([2000, max(shots_for_home.max(), shots_against_home.max(), shots_fo
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case7_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case7_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 8: Shots on goals in 5on5
@@ -757,7 +757,7 @@ ax2.set_ylim([1500, max(shots_for_home.max(), shots_against_home.max(), shots_fo
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case8_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case8_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 9: Shots on goals in 5on4
@@ -828,7 +828,7 @@ ax2.set_ylim([0, max(shots_for_home.max(), shots_against_home.max(), shots_for_a
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case9_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case9_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 10: Shots on goals in 4on5 situations
@@ -899,7 +899,7 @@ ax2.set_ylim([0, max(shots_for_home.max(), shots_against_home.max(), shots_for_a
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case10_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
+output_file = "output/case10_shots_home_away_bar_line_comparison_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
 
     ###### Visualisation CASE 11: Shots on goals in other situations
@@ -970,5 +970,5 @@ ax2.set_ylim([50, max(shots_for_home.max(), shots_against_home.max(), shots_for_
 
 # Adjust layout and save the plot
 plt.tight_layout()
-output_file = "resources/graphics/case11_Shots_on_goals_in_other_situations_with_annotations.png"  # Output file name
+output_file = "output/case11_Shots_on_goals_in_other_situations_with_annotations.png"  # Output file name
 plt.savefig(output_file, dpi=300, bbox_inches="tight")  # Save in the project directory
